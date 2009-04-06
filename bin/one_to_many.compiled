@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<CONFIG>
-  <Compiler Value="/usr/bin/ppc386" Date="1237293782"/>
-  <Params Value=" -MObjFPC -Scgi -O1 -gl -gh -WG -vewnhi -l -Fi/home/antonio/my_projects/progetti_prova/Demo_11_OnetoMany/bin/ -Fu/home/antonio/tiopf2/Source/Compilers/FPC/lib/i386-linux/ -Fu/home/antonio/lazarus/components/rtticontrols/lib/i386-linux/gtk2/ -Fu/home/antonio/lazarus/ideintf/units/i386-linux/ -Fu/home/antonio/lazarus/lcl/units/i386-linux/ -Fu/home/antonio/lazarus/lcl/units/i386-linux/gtk2/ -Fu/home/antonio/lazarus/packager/units/i386-linux/ -Fu/home/antonio/my_projects/progetti_prova/Demo_11_OnetoMany/source/ -Fu. -FU/home/antonio/my_projects/progetti_prova/Demo_11_OnetoMany/bin/ -FE/home/antonio/my_projects/progetti_prova/Demo_11_OnetoMany/bin/ -oone_to_many -dUseCThreads -dLINK_XMLLIGHT -dLCL -dLCLgtk2 one_to_many.lpr"/>
-</CONFIG>
