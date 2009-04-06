@@ -1,0 +1,59 @@
+object Form1: TForm1
+  Left = 251
+  Height = 352
+  Top = 232
+  Width = 742
+  ActiveControl = btnCreateClient
+  Caption = 'Form1'
+  ClientHeight = 352
+  ClientWidth = 742
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '0.9.27'
+  object btnCreateClient: TButton
+    Left = 24
+    Height = 25
+    Top = 40
+    Width = 153
+    Caption = 'Create Client'
+    OnClick = btnCreateClientClick
+    TabOrder = 0
+  end
+  object btnReadClients: TButton
+    Left = 25
+    Height = 25
+    Top = 80
+    Width = 152
+    Caption = 'Read Clients'
+    OnClick = btnReadClientsClick
+    TabOrder = 1
+  end
+  object btnDelete: TButton
+    Left = 25
+    Height = 25
+    Top = 128
+    Width = 75
+    Caption = 'Delete 0'
+    OnClick = btnDeleteClick
+    TabOrder = 2
+  end
+  object lbPhone: TListBox
+    Left = 464
+    Height = 289
+    Top = 40
+    Width = 248
+    ItemHeight = 0
+    TabOrder = 3
+    TopIndex = -1
+  end
+  object lbClient: TListBox
+    Left = 224
+    Height = 289
+    Top = 40
+    Width = 224
+    ItemHeight = 0
+    OnClick = lbClientClick
+    TabOrder = 4
+    TopIndex = -1
+  end
+end

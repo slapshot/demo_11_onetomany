@@ -1,0 +1,329 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="7"/>
+    <General>
+      <MainUnit Value="0"/>
+      <TargetFileExt Value=""/>
+      <UseXPManifest Value="True"/>
+      <ActiveEditorIndexAtStart Value="1"/>
+    </General>
+    <VersionInfo>
+      <ProjectVersion Value=""/>
+    </VersionInfo>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="3">
+      <Item1>
+        <PackageName Value="RunTimeTypeInfoControls"/>
+        <MinVersion Minor="1" Valid="True"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="tiOPF"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="LCL"/>
+      </Item3>
+    </RequiredPackages>
+    <Units Count="17">
+      <Unit0>
+        <Filename Value="one_to_many.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="one_to_many"/>
+        <CursorPos X="50" Y="12"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="3"/>
+        <UsageCount Value="35"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="u_mainform.pas"/>
+        <ComponentName Value="Form1"/>
+        <IsPartOfProject Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="u_mainform"/>
+        <CursorPos X="1" Y="139"/>
+        <TopLine Value="127"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="34"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="Client_AutoMap_Svr.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Client_AutoMap_Svr"/>
+        <CursorPos X="11" Y="5"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="34"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="Client_BOM.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Client_BOM"/>
+        <CursorPos X="35" Y="57"/>
+        <TopLine Value="45"/>
+        <EditorIndex Value="2"/>
+        <UsageCount Value="34"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="xml_db.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="xml_db"/>
+        <CursorPos X="64" Y="71"/>
+        <TopLine Value="57"/>
+        <EditorIndex Value="0"/>
+        <UsageCount Value="34"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="../../../tiOPF2/Source/Core/tiObject.pas"/>
+        <UnitName Value="tiObject"/>
+        <CursorPos X="3" Y="3702"/>
+        <TopLine Value="3696"/>
+        <UsageCount Value="9"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="../../../tiopf2/Source/Core/tiObject.pas"/>
+        <UnitName Value="tiObject"/>
+        <CursorPos X="17" Y="544"/>
+        <TopLine Value="532"/>
+        <UsageCount Value="9"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="GUI/u_mainform.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="u_mainform"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="20"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="BOM/Client_AutoMap_Svr.pas"/>
+        <UnitName Value="Client_AutoMap_Svr"/>
+        <UsageCount Value="20"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="BOM/Client_BOM.pas"/>
+        <UnitName Value="Client_BOM"/>
+        <UsageCount Value="20"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="GUI/u_mainform.lfm"/>
+        <UsageCount Value="20"/>
+        <SyntaxHighlighter Value="LFM"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="../../../../lazarus/components/rtticontrols/rttictrls.pas"/>
+        <UnitName Value="RTTICtrls"/>
+        <CursorPos X="3" Y="852"/>
+        <TopLine Value="840"/>
+        <UsageCount Value="10"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="../../../../lazarus/ide/lazarus.pp"/>
+        <UnitName Value="Lazarus"/>
+        <CursorPos X="10" Y="112"/>
+        <TopLine Value="99"/>
+        <UsageCount Value="9"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="../../../../lazarus/lcl/dialogs.pp"/>
+        <UnitName Value="Dialogs"/>
+        <CursorPos X="10" Y="480"/>
+        <TopLine Value="468"/>
+        <UsageCount Value="10"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="../../../../lazarus/lcl/include/messagedialogs.inc"/>
+        <CursorPos X="1" Y="229"/>
+        <TopLine Value="206"/>
+        <UsageCount Value="10"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="../../../../lazarus/lcl/editbtn.pas"/>
+        <UnitName Value="EditBtn"/>
+        <CursorPos X="22" Y="1058"/>
+        <TopLine Value="1046"/>
+        <UsageCount Value="10"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="../../../../lazarus/lcl/controls.pp"/>
+        <UnitName Value="Controls"/>
+        <CursorPos X="3" Y="50"/>
+        <TopLine Value="41"/>
+        <UsageCount Value="10"/>
+      </Unit16>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="20" Column="18" TopLine="9"/>
+      </Position1>
+      <Position2>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="130" Column="56" TopLine="116"/>
+      </Position2>
+      <Position3>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="26" Column="44" TopLine="26"/>
+      </Position3>
+      <Position4>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="56" Column="3" TopLine="54"/>
+      </Position4>
+      <Position5>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="20" Column="12" TopLine="20"/>
+      </Position5>
+      <Position6>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="21" Column="13" TopLine="20"/>
+      </Position6>
+      <Position7>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="138" Column="5" TopLine="123"/>
+      </Position7>
+      <Position8>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="125" Column="3" TopLine="102"/>
+      </Position8>
+      <Position9>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="138" Column="48" TopLine="124"/>
+      </Position9>
+      <Position10>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="26" Column="46" TopLine="26"/>
+      </Position10>
+      <Position11>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="60" Column="1" TopLine="47"/>
+      </Position11>
+      <Position12>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="29" Column="2" TopLine="21"/>
+      </Position12>
+      <Position13>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="26" Column="44" TopLine="26"/>
+      </Position13>
+      <Position14>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="114" Column="1" TopLine="106"/>
+      </Position14>
+      <Position15>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="70" Column="78" TopLine="51"/>
+      </Position15>
+      <Position16>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="78" Column="1" TopLine="66"/>
+      </Position16>
+      <Position17>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="71" Column="1" TopLine="58"/>
+      </Position17>
+      <Position18>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="146" Column="10" TopLine="138"/>
+      </Position18>
+      <Position19>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="50" Column="5" TopLine="27"/>
+      </Position19>
+      <Position20>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="152" Column="1" TopLine="127"/>
+      </Position20>
+      <Position21>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="67" Column="1" TopLine="55"/>
+      </Position21>
+      <Position22>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="78" Column="5" TopLine="55"/>
+      </Position22>
+      <Position23>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="82" Column="33" TopLine="63"/>
+      </Position23>
+      <Position24>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="80" Column="11" TopLine="68"/>
+      </Position24>
+      <Position25>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="134" Column="10" TopLine="116"/>
+      </Position25>
+      <Position26>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="79" Column="3" TopLine="75"/>
+      </Position26>
+      <Position27>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="132" Column="48" TopLine="120"/>
+      </Position27>
+      <Position28>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="109" Column="22" TopLine="104"/>
+      </Position28>
+      <Position29>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="145" Column="18" TopLine="136"/>
+      </Position29>
+      <Position30>
+        <Filename Value="u_mainform.pas"/>
+        <Caret Line="127" Column="1" TopLine="116"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="8"/>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)/"/>
+      <UnitOutputDirectory Value="/home/antonio/my_projects/progetti_prova/Demo_11_OnetoMany/bin"/>
+    </SearchPaths>
+    <Linking>
+      <Debugging>
+        <UseHeaptrc Value="True"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CustomOptions Value="-dUseCThreads
+-dLINK_XMLLIGHT
+"/>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>
