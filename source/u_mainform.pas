@@ -7,7 +7,8 @@ interface
 uses
   Classes, SysUtils, FileUtil, LResources, Forms, Controls, Graphics, Dialogs,
   StdCtrls, tiQuery, tiQueryXMLLight, Client_AutoMap_Svr,
-  Client_BOM, xml_db  , RTTICtrls;
+  Client_BOM, xml_db  , RTTICtrls, Grids, tiBaseMediator, tiFormMediator,
+  tiMediators, tiListMediators;
 
 type
 
@@ -19,6 +20,7 @@ type
     btnDelete: TButton;
     lbPhone: TListBox;
     lbClient: TListBox;
+    sgClients: TStringGrid;
     procedure btnCreateClientClick(Sender: TObject);
     procedure btnDeleteClick(Sender: TObject);
     procedure btnReadClientsClick(Sender: TObject);
@@ -29,7 +31,8 @@ type
     { private declarations }
     MyClientList: TClients;
     procedure UpdateClients;
-
+    FMediator: TFormMediator;
+    procedure SetupMediators;
   public
     { public declarations }
   end; 
@@ -53,11 +56,26 @@ begin
     XmlDB.Free;
   end;
   RegisterMappings;
+
+  RegisterFallBackMediators;
+  RegisterFallBackListmediators;
+
   MyClientList := TClients.CreateNew('','');
+
+  MyClientList.Read;
+  MyClientList.Clear;
+  MyClientList.Read;
+
+  Writeln(MyClientList.AsDebugString);
+  if MyClientList.Count > 0 then
+    ShowMessage('Ci sono diversi clienti');
+  UpdateClients;
+  SetupMediators;
 end;
 
 procedure TForm1.FormDestroy(Sender: TObject);
 begin
+  FMediator.Active:= False;
   MyClientList.Free;
 end;
 
@@ -84,6 +102,17 @@ begin
       lbClient.Items.Add(MyClientList.Items[i].ClientName);
     end;
   end;
+end;
+
+procedure TForm1.SetupMediators;
+begin
+  if not Assigned(FMediator) then
+  begin
+    FMediator := TFormMediator.Create(self);
+    FMediator.AddComposite('ClientName(150);ClientID(100);OID(36)', sgClients);
+  end;
+  FMediator.Subject := MyClientList;
+  FMediator.Active := True;
 end;
 
 
@@ -132,21 +161,22 @@ begin
   MyClientList.Clear;
   MyClientList.Read;
   UpdateClients;
+  WriteLn(MyClientList.AsDebugString);
 end;
 
 procedure TForm1.btnReadClientsClick(Sender: TObject);
 var
   i: integer;
 begin
-//  MyClientList := TClients.CreateNew('','');
   lbClient.Clear;
   MyClientList.Clear;
   MyClientList.Read;
+  UpdateClients;
   if MyClientList.Count > 0 then
-  for i := 0 to pred(MyClientList.Count) do
-  begin
-    lbClient.Items.Add(MyClientList.Items[i].ClientName);
-  end;
+    ShowMessage('Ci sono diversi clienti nella lista');
+  FMediator.Active:=False;
+  FMediator.Active:=True;
+  WriteLn(MyClientList.AsDebugString);
 end;
 
 initialization

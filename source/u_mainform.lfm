@@ -1,12 +1,12 @@
 object Form1: TForm1
-  Left = 251
-  Height = 352
-  Top = 232
-  Width = 742
+  Left = 314
+  Height = 619
+  Top = 227
+  Width = 934
   ActiveControl = btnCreateClient
   Caption = 'Form1'
-  ClientHeight = 352
-  ClientWidth = 742
+  ClientHeight = 619
+  ClientWidth = 934
   OnCreate = FormCreate
   OnDestroy = FormDestroy
   LCLVersion = '0.9.27'
@@ -55,5 +55,13 @@ object Form1: TForm1
     OnClick = lbClientClick
     TabOrder = 4
     TopIndex = -1
+  end
+  object sgClients: TStringGrid
+    Left = 32
+    Height = 240
+    Top = 360
+    Width = 680
+    FixedCols = 0
+    TabOrder = 5
   end
 end

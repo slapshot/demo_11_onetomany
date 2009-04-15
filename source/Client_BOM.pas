@@ -119,14 +119,14 @@ var
   lNow: DWord;
 begin
 //  lNow:= GetTickCount;
-  inherited;
+  inherited Read;
 //  Log('Time to load ' + IntToStr(Count) + ' Clients: ' +
 //      IntToStr(GetTickCount - lNow));
 end;
 
 procedure TClients.Save;
 begin
-  inherited;
+  inherited Save;
 end;
 
 procedure TClients.SetItems(i: integer; const Value: TClient);
