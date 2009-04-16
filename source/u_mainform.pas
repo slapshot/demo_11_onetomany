@@ -21,17 +21,20 @@ type
     lbPhone: TListBox;
     lbClient: TListBox;
     sgClients: TStringGrid;
+    sgPhoneNumbers: TStringGrid;
     procedure btnCreateClientClick(Sender: TObject);
     procedure btnDeleteClick(Sender: TObject);
     procedure btnReadClientsClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure lbClientClick(Sender: TObject);
+    procedure sgClientsSelection(Sender: TObject; aCol, aRow: Integer);
   private
     { private declarations }
     MyClientList: TClients;
     procedure UpdateClients;
     FMediator: TFormMediator;
+    FPhoneMediator: TFormMediator;
     procedure SetupMediators;
   public
     { public declarations }
@@ -75,6 +78,7 @@ end;
 
 procedure TForm1.FormDestroy(Sender: TObject);
 begin
+  FPhoneMediator.Active:= False;
   FMediator.Active:= False;
   MyClientList.Free;
 end;
@@ -88,6 +92,16 @@ begin
   begin
     lbPhone.Items.Add(MyClientList.Items[lbClient.ItemIndex].PhoneNumbers.Items[i].NumberText);
   end;
+end;
+
+
+procedure TForm1.sgClientsSelection(Sender: TObject; aCol, aRow: Integer);
+var
+  c: TClient;
+begin
+  c := TClient(TStringGridMediator(FMediator.FindByComponent(sgClients).Mediator).SelectedObject);
+  if Assigned(c) then
+    FPhoneMediator.Subject := c.PhoneNumbers;
 end;
 
 procedure TForm1.UpdateClients;
@@ -110,9 +124,18 @@ begin
   begin
     FMediator := TFormMediator.Create(self);
     FMediator.AddComposite('ClientName(150);ClientID(100);OID(36)', sgClients);
+//    FMediator.AddComposite('NumberType(30);NumberText(30)', sgPhoneNumbers);
   end;
   FMediator.Subject := MyClientList;
   FMediator.Active := True;
+
+  if not Assigned(FPhoneMediator) then
+  begin
+    FPhoneMediator := TFormMediator.Create(self);
+    FPhoneMediator.AddComposite('NumberType(30);NumberText(30)', sgPhoneNumbers);
+  end;
+  FPhoneMediator.Subject := MyClientList.Items[0].PhoneNumbers;
+  FPhoneMediator.Active := True;
 end;
 
 
@@ -169,13 +192,16 @@ var
   i: integer;
 begin
   lbClient.Clear;
+  FMediator.Active:=False;
+  FPhoneMediator.Active:=false;
   MyClientList.Clear;
   MyClientList.Read;
   UpdateClients;
   if MyClientList.Count > 0 then
     ShowMessage('Ci sono diversi clienti nella lista');
-  FMediator.Active:=False;
+//  FMediator.Active:=False;
   FMediator.Active:=True;
+  FPhoneMediator.Active:= True;
   WriteLn(MyClientList.AsDebugString);
 end;
 
