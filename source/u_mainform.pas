@@ -45,6 +45,9 @@ var
 
 implementation
 
+uses
+  tiObject;
+
 { TForm1 }
 
 
@@ -70,16 +73,19 @@ begin
   MyClientList.Read;
 
   Writeln(MyClientList.AsDebugString);
-  if MyClientList.Count > 0 then
-    ShowMessage('Ci sono diversi clienti');
+{  if MyClientList.Count > 0 then
+    ShowMessage('Ci sono diversi clienti');}
   UpdateClients;
   SetupMediators;
 end;
 
 procedure TForm1.FormDestroy(Sender: TObject);
 begin
-  FPhoneMediator.Active:= False;
+  if FPhoneMediator.Active then
+    FPhoneMediator.Active:= False;
   FMediator.Active:= False;
+  if MyClientList.Dirty then
+    MyClientList.Save;
   MyClientList.Free;
 end;
 
@@ -101,7 +107,11 @@ var
 begin
   c := TClient(TStringGridMediator(FMediator.FindByComponent(sgClients).Mediator).SelectedObject);
   if Assigned(c) then
+  begin
     FPhoneMediator.Subject := c.PhoneNumbers;
+    if not FPhoneMediator.Active then
+      FPhoneMediator.Active := True;
+  end;
 end;
 
 procedure TForm1.UpdateClients;
@@ -134,12 +144,11 @@ begin
     FPhoneMediator := TFormMediator.Create(self);
     FPhoneMediator.AddComposite('NumberType(30);NumberText(30)', sgPhoneNumbers);
   end;
-  FPhoneMediator.Subject := MyClientList.Items[0].PhoneNumbers;
-  FPhoneMediator.Active := True;
+//  FPhoneMediator.Subject := MyClientList.Items[0].PhoneNumbers;
+//  FPhoneMediator.Active := True;
 end;
 
-
-procedure TForm1.btnCreateClientClick(Sender: TObject);
+       procedure TForm1.btnCreateClientClick(Sender: TObject);
 var
   MyClient: TClient;
   myPhoneNumber: TPhoneNumber;
@@ -176,15 +185,31 @@ begin
 end;
 
 procedure TForm1.btnDeleteClick(Sender: TObject);
+var
+  c: TClient;
+  M: TMediatorView;
 begin
-  MyClientList.Items[lbClient.ItemIndex].Deleted:=True;
+  M:=FMediator.FindByComponent(sgClients).Mediator;
+  c := TClient(TStringGridMediator(M).SelectedObject);
+  if Assigned(c) then
+    begin
+      MyClientList.Extract(c);
+      C.Deleted:=True;
+      C.Dirty:=True;
+      C.Save;
+      C.Free;
+      M.ObjectToGui;
+    end;
+
+
+{     MyClientList.Items[lbClient.ItemIndex].Deleted:=True;
   MyClientList.Items[lbClient.ItemIndex].Dirty:=True;
   MyClientList.Dirty:= True;
   MyClientList.Save;
   MyClientList.Clear;
-  MyClientList.Read;
-  UpdateClients;
-  WriteLn(MyClientList.AsDebugString);
+  MyClientList.Read;}
+//  UpdateClients;
+//  WriteLn(MyClientList.AsDebugString);
 end;
 
 procedure TForm1.btnReadClientsClick(Sender: TObject);

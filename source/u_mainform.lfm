@@ -29,11 +29,11 @@ object Form1: TForm1
     TabOrder = 1
   end
   object btnDelete: TButton
-    Left = 25
+    Left = 24
     Height = 25
     Top = 128
     Width = 75
-    Caption = 'Delete 0'
+    Caption = 'Delete'
     OnClick = btnDeleteClick
     TabOrder = 2
   end

@@ -38,15 +38,15 @@
         <PackageName Value="LCL"/>
       </Item4>
     </RequiredPackages>
-    <Units Count="36">
+    <Units Count="37">
       <Unit0>
         <Filename Value="one_to_many.lpr"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="one_to_many"/>
-        <CursorPos X="130" Y="21"/>
+        <CursorPos X="1" Y="22"/>
         <TopLine Value="1"/>
-        <EditorIndex Value="4"/>
-        <UsageCount Value="58"/>
+        <EditorIndex Value="3"/>
+        <UsageCount Value="78"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -55,10 +55,10 @@
         <IsPartOfProject Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="u_mainform"/>
-        <CursorPos X="25" Y="79"/>
-        <TopLine Value="51"/>
+        <CursorPos X="14" Y="200"/>
+        <TopLine Value="188"/>
         <EditorIndex Value="1"/>
-        <UsageCount Value="57"/>
+        <UsageCount Value="77"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
@@ -67,16 +67,16 @@
         <UnitName Value="Client_AutoMap_Svr"/>
         <CursorPos X="11" Y="5"/>
         <TopLine Value="1"/>
-        <UsageCount Value="57"/>
+        <UsageCount Value="77"/>
       </Unit2>
       <Unit3>
         <Filename Value="Client_BOM.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Client_BOM"/>
-        <CursorPos X="3" Y="75"/>
-        <TopLine Value="59"/>
-        <EditorIndex Value="3"/>
-        <UsageCount Value="57"/>
+        <CursorPos X="39" Y="161"/>
+        <TopLine Value="178"/>
+        <EditorIndex Value="2"/>
+        <UsageCount Value="77"/>
         <Loaded Value="True"/>
       </Unit3>
       <Unit4>
@@ -86,7 +86,7 @@
         <CursorPos X="43" Y="61"/>
         <TopLine Value="41"/>
         <EditorIndex Value="0"/>
-        <UsageCount Value="57"/>
+        <UsageCount Value="77"/>
         <Loaded Value="True"/>
       </Unit4>
       <Unit5>
@@ -94,14 +94,14 @@
         <UnitName Value="tiObject"/>
         <CursorPos X="3" Y="3702"/>
         <TopLine Value="3696"/>
-        <UsageCount Value="7"/>
+        <UsageCount Value="6"/>
       </Unit5>
       <Unit6>
         <Filename Value="../../../tiopf2/Source/Core/tiObject.pas"/>
         <UnitName Value="tiObject"/>
         <CursorPos X="17" Y="544"/>
         <TopLine Value="532"/>
-        <UsageCount Value="7"/>
+        <UsageCount Value="6"/>
       </Unit6>
       <Unit7>
         <Filename Value="GUI/u_mainform.pas"/>
@@ -111,21 +111,21 @@
         <UnitName Value="u_mainform"/>
         <CursorPos X="1" Y="1"/>
         <TopLine Value="1"/>
-        <UsageCount Value="18"/>
+        <UsageCount Value="17"/>
       </Unit7>
       <Unit8>
         <Filename Value="BOM/Client_AutoMap_Svr.pas"/>
         <UnitName Value="Client_AutoMap_Svr"/>
-        <UsageCount Value="18"/>
+        <UsageCount Value="17"/>
       </Unit8>
       <Unit9>
         <Filename Value="BOM/Client_BOM.pas"/>
         <UnitName Value="Client_BOM"/>
-        <UsageCount Value="18"/>
+        <UsageCount Value="17"/>
       </Unit9>
       <Unit10>
         <Filename Value="GUI/u_mainform.lfm"/>
-        <UsageCount Value="18"/>
+        <UsageCount Value="17"/>
         <SyntaxHighlighter Value="LFM"/>
       </Unit10>
       <Unit11>
@@ -133,41 +133,41 @@
         <UnitName Value="RTTICtrls"/>
         <CursorPos X="3" Y="852"/>
         <TopLine Value="840"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit11>
       <Unit12>
         <Filename Value="../../../../lazarus/ide/lazarus.pp"/>
         <UnitName Value="Lazarus"/>
         <CursorPos X="10" Y="112"/>
         <TopLine Value="99"/>
-        <UsageCount Value="7"/>
+        <UsageCount Value="6"/>
       </Unit12>
       <Unit13>
         <Filename Value="../../../../lazarus/lcl/dialogs.pp"/>
         <UnitName Value="Dialogs"/>
         <CursorPos X="10" Y="480"/>
         <TopLine Value="468"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit13>
       <Unit14>
         <Filename Value="../../../../lazarus/lcl/include/messagedialogs.inc"/>
         <CursorPos X="1" Y="229"/>
         <TopLine Value="206"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit14>
       <Unit15>
         <Filename Value="../../../../lazarus/lcl/editbtn.pas"/>
         <UnitName Value="EditBtn"/>
         <CursorPos X="22" Y="1058"/>
         <TopLine Value="1046"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit15>
       <Unit16>
         <Filename Value="../../../../lazarus/lcl/controls.pp"/>
         <UnitName Value="Controls"/>
         <CursorPos X="3" Y="50"/>
         <TopLine Value="41"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit16>
       <Unit17>
         <Filename Value="../../../../tiOPF2/Source/Demos/LCL/Demo_21_AddressBook/frmmain.pp"/>
@@ -177,246 +177,231 @@
         <UnitName Value="frmmain"/>
         <CursorPos X="69" Y="12"/>
         <TopLine Value="1"/>
-        <UsageCount Value="19"/>
+        <UsageCount Value="18"/>
       </Unit17>
       <Unit18>
         <Filename Value="../../../../tiOPF2/Source/Core/tiFormMediator.pas"/>
         <UnitName Value="tiFormMediator"/>
-        <CursorPos X="41" Y="51"/>
-        <TopLine Value="33"/>
+        <CursorPos X="10" Y="259"/>
+        <TopLine Value="243"/>
         <UsageCount Value="17"/>
       </Unit18>
       <Unit19>
         <Filename Value="../../../../tiOPF2/Source/Core/tiObject.pas"/>
         <UnitName Value="tiObject"/>
-        <CursorPos X="17" Y="458"/>
-        <TopLine Value="442"/>
-        <UsageCount Value="10"/>
+        <CursorPos X="10" Y="376"/>
+        <TopLine Value="367"/>
+        <UsageCount Value="11"/>
       </Unit19>
       <Unit20>
         <Filename Value="../../../../lazarus/lcl/include/customform.inc"/>
-        <CursorPos X="1" Y="2339"/>
-        <TopLine Value="2324"/>
+        <CursorPos X="1" Y="82"/>
+        <TopLine Value="67"/>
         <UsageCount Value="10"/>
       </Unit20>
       <Unit21>
         <Filename Value="../../../../lazarus/lcl/include/application.inc"/>
         <CursorPos X="1" Y="1905"/>
         <TopLine Value="1890"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit21>
       <Unit22>
         <Filename Value="../../../../tiOPF2/Source/GUI/tiDialogs.pas"/>
         <UnitName Value="tiDialogs"/>
         <CursorPos X="96" Y="137"/>
         <TopLine Value="129"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="10"/>
       </Unit22>
       <Unit23>
         <Filename Value="../../../../tiOPF2/Source/GUI/tiPerAwareCtrls.pas"/>
         <UnitName Value="tiPerAwareCtrls"/>
         <CursorPos X="48" Y="806"/>
         <TopLine Value="790"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="10"/>
       </Unit23>
       <Unit24>
         <Filename Value="../../../../fpc/rtl/objpas/classes/classesh.inc"/>
         <CursorPos X="14" Y="1588"/>
         <TopLine Value="1572"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit24>
       <Unit25>
         <Filename Value="../../../../fpc/rtl/objpas/sysutils/filutilh.inc"/>
         <CursorPos X="10" Y="96"/>
         <TopLine Value="69"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit25>
       <Unit26>
         <Filename Value="../../../../fpc/rtl/unix/sysutils.pp"/>
         <UnitName Value="sysutils"/>
         <CursorPos X="3" Y="655"/>
         <TopLine Value="652"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit26>
       <Unit27>
         <Filename Value="../../../../lazarus/lcl/include/control.inc"/>
-        <CursorPos X="1" Y="1598"/>
+        <CursorPos X="1" Y="1597"/>
         <TopLine Value="1582"/>
         <UsageCount Value="10"/>
       </Unit27>
       <Unit28>
         <Filename Value="../../../../lazarus/lcl/include/buttoncontrol.inc"/>
         <CursorPos X="1" Y="27"/>
-        <TopLine Value="11"/>
+        <TopLine Value="12"/>
         <UsageCount Value="10"/>
       </Unit28>
       <Unit29>
         <Filename Value="../../../../lazarus/lcl/include/buttons.inc"/>
-        <CursorPos X="1" Y="321"/>
-        <TopLine Value="293"/>
+        <CursorPos X="1" Y="327"/>
+        <TopLine Value="298"/>
         <UsageCount Value="10"/>
       </Unit29>
       <Unit30>
         <Filename Value="../../../../lazarus/lcl/include/wincontrol.inc"/>
         <CursorPos X="1" Y="4805"/>
-        <TopLine Value="4788"/>
+        <TopLine Value="4790"/>
         <UsageCount Value="10"/>
       </Unit30>
       <Unit31>
         <Filename Value="../../../../lazarus/lcl/lclmessageglue.pas"/>
         <UnitName Value="LCLMessageGlue"/>
         <CursorPos X="1" Y="121"/>
-        <TopLine Value="105"/>
+        <TopLine Value="106"/>
         <UsageCount Value="10"/>
       </Unit31>
       <Unit32>
         <Filename Value="../../../../lazarus/lcl/interfaces/gtk2/gtk2wsstdctrls.pp"/>
         <UnitName Value="Gtk2WSStdCtrls"/>
-        <CursorPos X="1" Y="1689"/>
-        <TopLine Value="1672"/>
+        <CursorPos X="3" Y="1689"/>
+        <TopLine Value="1674"/>
         <UsageCount Value="10"/>
       </Unit32>
       <Unit33>
         <Filename Value="../../../../tiOPF2/Source/Core/tiBaseMediator.pas"/>
         <UnitName Value="tiBaseMediator"/>
-        <CursorPos X="1" Y="527"/>
-        <TopLine Value="512"/>
-        <EditorIndex Value="2"/>
-        <UsageCount Value="11"/>
-        <Loaded Value="True"/>
+        <CursorPos X="1" Y="570"/>
+        <TopLine Value="555"/>
+        <UsageCount Value="13"/>
       </Unit33>
       <Unit34>
         <Filename Value="../../../../tiOPF2/Source/GUI/LCL/tiMediators.pas"/>
         <UnitName Value="tiMediators"/>
         <CursorPos X="1" Y="1"/>
         <TopLine Value="91"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit34>
       <Unit35>
         <Filename Value="../../../../tiOPF2/Source/GUI/LCL/tiListMediators.pas"/>
         <UnitName Value="tiListMediators"/>
         <CursorPos X="17" Y="106"/>
         <TopLine Value="90"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit35>
+      <Unit36>
+        <Filename Value="../../../../tiOPF2/Source/Core/tiVisitor.pas"/>
+        <UnitName Value="tiVisitor"/>
+        <CursorPos X="3" Y="634"/>
+        <TopLine Value="632"/>
+        <UsageCount Value="10"/>
+      </Unit36>
     </Units>
-    <JumpHistory Count="29" HistoryIndex="28">
+    <JumpHistory Count="24" HistoryIndex="23">
       <Position1>
         <Filename Value="u_mainform.pas"/>
-        <Caret Line="180" Column="8" TopLine="155"/>
+        <Caret Line="78" Column="122" TopLine="69"/>
       </Position1>
       <Position2>
         <Filename Value="u_mainform.pas"/>
-        <Caret Line="147" Column="43" TopLine="132"/>
+        <Caret Line="85" Column="1" TopLine="70"/>
       </Position2>
       <Position3>
         <Filename Value="u_mainform.pas"/>
-        <Caret Line="180" Column="8" TopLine="156"/>
+        <Caret Line="79" Column="10" TopLine="70"/>
       </Position3>
       <Position4>
         <Filename Value="u_mainform.pas"/>
-        <Caret Line="177" Column="1" TopLine="152"/>
+        <Caret Line="85" Column="1" TopLine="52"/>
       </Position4>
       <Position5>
         <Filename Value="u_mainform.pas"/>
-        <Caret Line="178" Column="1" TopLine="152"/>
+        <Caret Line="194" Column="7" TopLine="183"/>
       </Position5>
       <Position6>
         <Filename Value="u_mainform.pas"/>
-        <Caret Line="73" Column="10" TopLine="58"/>
+        <Caret Line="185" Column="9" TopLine="170"/>
       </Position6>
       <Position7>
-        <Filename Value="u_mainform.pas"/>
-        <Caret Line="115" Column="17" TopLine="107"/>
+        <Filename Value="Client_BOM.pas"/>
+        <Caret Line="37" Column="3" TopLine="35"/>
       </Position7>
       <Position8>
         <Filename Value="u_mainform.pas"/>
-        <Caret Line="62" Column="12" TopLine="48"/>
+        <Caret Line="198" Column="1" TopLine="177"/>
       </Position8>
       <Position9>
         <Filename Value="u_mainform.pas"/>
-        <Caret Line="112" Column="18" TopLine="107"/>
+        <Caret Line="84" Column="3" TopLine="62"/>
       </Position9>
       <Position10>
         <Filename Value="u_mainform.pas"/>
-        <Caret Line="112" Column="18" TopLine="87"/>
+        <Caret Line="79" Column="12" TopLine="74"/>
       </Position10>
       <Position11>
         <Filename Value="u_mainform.pas"/>
-        <Caret Line="24" Column="19" TopLine="24"/>
+        <Caret Line="143" Column="3" TopLine="126"/>
       </Position11>
       <Position12>
         <Filename Value="u_mainform.pas"/>
-        <Caret Line="74" Column="10" TopLine="49"/>
+        <Caret Line="96" Column="8" TopLine="82"/>
       </Position12>
       <Position13>
         <Filename Value="u_mainform.pas"/>
-        <Caret Line="130" Column="26" TopLine="108"/>
+        <Caret Line="113" Column="37" TopLine="94"/>
       </Position13>
       <Position14>
         <Filename Value="u_mainform.pas"/>
-        <Caret Line="114" Column="64" TopLine="108"/>
+        <Caret Line="74" Column="119" TopLine="69"/>
       </Position14>
       <Position15>
         <Filename Value="u_mainform.pas"/>
-        <Caret Line="24" Column="19" TopLine="8"/>
+        <Caret Line="85" Column="1" TopLine="70"/>
       </Position15>
       <Position16>
         <Filename Value="u_mainform.pas"/>
-        <Caret Line="114" Column="74" TopLine="98"/>
+        <Caret Line="86" Column="1" TopLine="71"/>
       </Position16>
       <Position17>
         <Filename Value="u_mainform.pas"/>
-        <Caret Line="119" Column="21" TopLine="104"/>
+        <Caret Line="87" Column="1" TopLine="72"/>
       </Position17>
       <Position18>
         <Filename Value="u_mainform.pas"/>
-        <Caret Line="125" Column="63" TopLine="109"/>
+        <Caret Line="89" Column="1" TopLine="74"/>
       </Position18>
       <Position19>
         <Filename Value="u_mainform.pas"/>
-        <Caret Line="129" Column="14" TopLine="79"/>
+        <Caret Line="90" Column="1" TopLine="75"/>
       </Position19>
       <Position20>
         <Filename Value="u_mainform.pas"/>
-        <Caret Line="31" Column="73" TopLine="31"/>
+        <Caret Line="90" Column="1" TopLine="75"/>
       </Position20>
       <Position21>
         <Filename Value="u_mainform.pas"/>
-        <Caret Line="101" Column="33" TopLine="85"/>
+        <Caret Line="204" Column="5" TopLine="188"/>
       </Position21>
       <Position22>
         <Filename Value="u_mainform.pas"/>
-        <Caret Line="32" Column="31" TopLine="32"/>
+        <Caret Line="84" Column="1" TopLine="69"/>
       </Position22>
       <Position23>
         <Filename Value="u_mainform.pas"/>
-        <Caret Line="108" Column="32" TopLine="99"/>
+        <Caret Line="198" Column="14" TopLine="188"/>
       </Position23>
       <Position24>
-        <Filename Value="u_mainform.pas"/>
-        <Caret Line="99" Column="1" TopLine="99"/>
+        <Filename Value="one_to_many.lpr"/>
+        <Caret Line="22" Column="14" TopLine="1"/>
       </Position24>
-      <Position25>
-        <Filename Value="u_mainform.pas"/>
-        <Caret Line="101" Column="118" TopLine="76"/>
-      </Position25>
-      <Position26>
-        <Filename Value="u_mainform.pas"/>
-        <Caret Line="104" Column="11" TopLine="89"/>
-      </Position26>
-      <Position27>
-        <Filename Value="../../../../tiOPF2/Source/Core/tiBaseMediator.pas"/>
-        <Caret Line="527" Column="21" TopLine="512"/>
-      </Position27>
-      <Position28>
-        <Filename Value="u_mainform.pas"/>
-        <Caret Line="95" Column="19" TopLine="79"/>
-      </Position28>
-      <Position29>
-        <Filename Value="u_mainform.pas"/>
-        <Caret Line="204" Column="32" TopLine="172"/>
-      </Position29>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>

@@ -32,6 +32,8 @@ type
     procedure   Save; override;
   end;
 
+  { TClient }
+
   TClient = class(TtiObject)
   private
     FClientID: string;
@@ -50,6 +52,8 @@ type
 
     // Explain this...
     procedure   AssignClassProps(pSource: TtiObject); override;
+    procedure Save; overload; override;
+    procedure Read; overload; override;
 
   published
     property    ClientName: string read FClientName write FClientName;
@@ -138,7 +142,17 @@ end;
 
 procedure TClient.AssignClassProps(pSource: TtiObject);
 begin
- PhoneNumbers.Assign(TClient(pSource).PhoneNumbers);
+  PhoneNumbers.Assign(TClient(pSource).PhoneNumbers);
+end;
+
+procedure TClient.Save;
+begin
+  inherited Save;
+end;
+
+procedure TClient.Read;
+begin
+  inherited Read;
 end;
 
 constructor TClient.Create;
