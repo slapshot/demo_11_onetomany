@@ -66,10 +66,7 @@ begin
   RegisterFallBackMediators;
   RegisterFallBackListmediators;
 
-  MyClientList := TClients.CreateNew('','');
-
-  MyClientList.Read;
-  MyClientList.Clear;
+  MyClientList := TClients.Create;
   MyClientList.Read;
 
   Writeln(MyClientList.AsDebugString);
@@ -200,16 +197,6 @@ begin
       C.Free;
       M.ObjectToGui;
     end;
-
-
-{     MyClientList.Items[lbClient.ItemIndex].Deleted:=True;
-  MyClientList.Items[lbClient.ItemIndex].Dirty:=True;
-  MyClientList.Dirty:= True;
-  MyClientList.Save;
-  MyClientList.Clear;
-  MyClientList.Read;}
-//  UpdateClients;
-//  WriteLn(MyClientList.AsDebugString);
 end;
 
 procedure TForm1.btnReadClientsClick(Sender: TObject);

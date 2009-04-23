@@ -14,6 +14,22 @@ const
   cErrorPhoneNumberTextMissing = 'Please enter the phone number text';
 type
 
+  { TMarkObject }
+
+  TMarkObject = class(TtiObject)
+  protected
+    procedure Mark;
+  end;
+
+
+  { TMarkObjectList }
+
+  TMarkObjectList = class(TtiObjectList)
+  protected
+    procedure Mark;
+  end;
+
+
   TClient = class;
   TClients = class;
   TPhoneNumbers = class;
@@ -39,6 +55,7 @@ type
     FClientID: string;
     FClientName: string;
     FPhoneNumbers: TPhoneNumbers;
+    procedure SetClientName(const AValue: string);
   protected
     function    GetOwner: TClients; reintroduce;
     procedure   SetOwner(const Value: TClients); reintroduce;
@@ -52,16 +69,16 @@ type
 
     // Explain this...
     procedure   AssignClassProps(pSource: TtiObject); override;
-    procedure Save; overload; override;
-    procedure Read; overload; override;
+    procedure   Save; overload; override;
+    procedure   Read; overload; override;
 
   published
-    property    ClientName: string read FClientName write FClientName;
+    property    ClientName: string read FClientName write SetClientName;
     property    ClientID  : string   read FClientID   write FClientID;
     property    PhoneNumbers: TPhoneNumbers read FPhoneNumbers;
   end;
 
-  TPhoneNumbers = class(TtiObjectList)
+  TPhoneNumbers = class(TMarkObjectList)
   private
   protected
     function    GetItems(i: integer): TPhoneNumber; reintroduce;
@@ -76,10 +93,13 @@ type
   published
   end;
 
-  TPhoneNumber = class(TtiObject)
+  { TPhoneNumber }
+
+  TPhoneNumber = class(TMarkObject)
   private
     FNumberText: string;
     FNumberType: string;
+    procedure SetNumberType(const AValue: string);
   protected
     function    GetOwner: TPhoneNumbers; reintroduce;
     procedure   SetOwner(const Value: TPhoneNumbers); reintroduce;
@@ -168,6 +188,15 @@ begin
   inherited;
 end;
 
+procedure TClient.SetClientName(const AValue: string);
+begin
+  if FClientName=AValue then exit;
+//  BeginUpdate;
+  FClientName:=AValue;
+//  Mark;
+//  EndUpdate;
+end;
+
 function TClient.GetOwner: TClients;
 begin
   result:= TClients(inherited GetOwner);
@@ -236,6 +265,16 @@ end;
 
 { TPhoneNumber }
 
+procedure TPhoneNumber.SetNumberType(const AValue: string);
+begin
+  if FNumberType=AValue then exit;
+//  BeginUpdate;
+  FNumberType:=AValue;
+//  Mark;
+//  EndUpdate;
+
+end;
+
 function TPhoneNumber.GetOwner: TPhoneNumbers;
 begin
   result:= TPhoneNumbers(inherited GetOwner);
@@ -257,6 +296,22 @@ end;
 procedure TPhoneNumber.SetOwner(const Value: TPhoneNumbers);
 begin
   inherited SetOwner(Value);
+end;
+
+{ TMarkObject }
+
+procedure TMarkObject.Mark;
+begin
+  if (ObjectState <> posEmpty) then
+    Dirty:= True;
+end;
+
+{ TMarkObjectList }
+
+procedure TMarkObjectList.Mark;
+begin
+  if (ObjectState <> posEmpty) then
+    Dirty:= True;
 end;
 
 end.
